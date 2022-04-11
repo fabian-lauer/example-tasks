@@ -33,7 +33,6 @@ a mail has already been sent.
 - What are the advantages and disadvantages of this solution?
 - What could an alternative solution look like?
 
-Translated with www.DeepL.com/Translator (free version)
 
 # Solution
 My solution/comments/ideas can be found here: [SOLUTION.md](Docs/SOLUTION.md)
