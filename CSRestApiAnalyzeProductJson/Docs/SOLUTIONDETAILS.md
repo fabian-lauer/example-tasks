@@ -10,3 +10,12 @@ And now step by step :-)
 3. Created a universal response object, so the single product-data is wrapped by a class having a datatype attribute. This makes it reusable e.g. for the respond all route
 4. Extend product data model with some regex parsing to get the needed info in separate attributes for later usage (filtering)
 5. Implement filtering and business logic
+
+
+# Feedback / Notes
+- Data structure in product.json not "atomic" - should be checked
+- Further questions for proper implementation
+    - expected load for testing - also caching
+    - align on response dataformat and status-codes
+
+
