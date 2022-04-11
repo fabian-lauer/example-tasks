@@ -26,7 +26,7 @@ namespace CSRestApiAnalyzeProductJson.Controllers
         [HttpGet("high-low-perlitre")]            
         ///<summary>Get products with the highest and lowest price per litre. In the response the datatype will be 'CheapestProductPerLitre' or 'MostExpensiveProductPerLitre'</summary        
         ///<param name="url">URL to json-file with product list that will be used for calculation</param>
-        public IActionResult GetHighLowPerLitre(string url = "https://somedatastore.blob.core.windows.net/test/ProductData.json")
+        public IActionResult GetHighLowPerLitre(string url = "https://raw.githubusercontent.com/fabian-lauer/example-tasks/main/CSRestApiAnalyzeProductJson/Docs/ProductData.json")
         {
             var result = new SimpleProductResponse(){ success = true};
 
@@ -48,7 +48,7 @@ namespace CSRestApiAnalyzeProductJson.Controllers
         ///<summary>Get all products for a given price. In the response the datatype will be 'ByPrice'</summary        
         ///<param name="url">URL to json-file with product list that will be used for calculation</param>
         ///<param name="price">Price with dot as decimal separator used for filtering of products</param>
-        public IActionResult GetByPrice(string url = "https://somedatastore.blob.core.windows.net/test/ProductData.json", decimal price = 17.99M)
+        public IActionResult GetByPrice(string url = "https://raw.githubusercontent.com/fabian-lauer/example-tasks/main/CSRestApiAnalyzeProductJson/Docs/ProductData.json", decimal price = 17.99M)
         {
             var result = new SimpleProductResponse(){ success = true};
 
@@ -69,7 +69,7 @@ namespace CSRestApiAnalyzeProductJson.Controllers
         [HttpGet("most-packaging-count")]   
         ///<summary>Returns the products with the max packaging-unit included in the product-data-file. In the response the datatype will be 'MostPackagingCount'</summary        
         ///<param name="url">URL to json-file with product list that will be used for calculation</param>   
-        public IActionResult GetMostPackagingCount(string url = "https://somedatastore.blob.core.windows.net/test/ProductData.json")
+        public IActionResult GetMostPackagingCount(string url = "https://raw.githubusercontent.com/fabian-lauer/example-tasks/main/CSRestApiAnalyzeProductJson/Docs/ProductData.json")
         {
             var result = new SimpleProductResponse(){ success = true};
 
@@ -90,7 +90,7 @@ namespace CSRestApiAnalyzeProductJson.Controllers
         [HttpGet("bundled-info")]        
         ///<summary>Special-call, will return all results as a combination of the above 3 routes</summary        
         ///<param name="url">URL to json-file with product list that will be used for calculation</param>   
-        public IActionResult GetAll(string url = "https://somedatastore.blob.core.windows.net/test/ProductData.json")
+        public IActionResult GetAll(string url = "https://raw.githubusercontent.com/fabian-lauer/example-tasks/main/CSRestApiAnalyzeProductJson/Docs/ProductData.json")
         {
             var result = new SimpleProductResponse(){ success = true, data = new List<SimpleProductDataResponse>()};
 

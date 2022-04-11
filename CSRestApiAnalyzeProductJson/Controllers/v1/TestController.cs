@@ -25,7 +25,7 @@ namespace CSRestApiAnalyzeProductJson.Controllers
         [HttpGet]        
         public IEnumerable<SimpleProduct> Get()
         {
-            return SimpleProductService.FromUrl("https://somedatastore.blob.core.windows.net/test/ProductData.json");
+            return SimpleProductService.FromUrl("https://raw.githubusercontent.com/fabian-lauer/example-tasks/main/CSRestApiAnalyzeProductJson/Docs/ProductData.json");
         }
     }
 }
