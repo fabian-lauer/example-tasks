@@ -54,7 +54,7 @@ Idea would look like this:
     - Service-Bus is quickly setuped and uses less resources
 
 ### Small BPMN diagram
-![BPNM Diagram](Docs/Solution-2-Diagram.PNG "BPNM Diagram")
+![BPNM Diagram](Solution-2-Diagram.PNG "BPNM Diagram")
 
 Made with [BPMN.io](https://demo.bpmn.io/new)
 
